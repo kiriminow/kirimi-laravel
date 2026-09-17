@@ -27,6 +27,15 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Default WABA ID
+    |--------------------------------------------------------------------------
+    | Optional default WhatsApp Business Account ID used for WABA (Meta Cloud
+    | API) messages when no waba_id is specified per message.
+    */
+    'waba_id' => env('KIRIMI_WABA_ID'),
+
+    /*
+    |--------------------------------------------------------------------------
     | API Base URL
     |--------------------------------------------------------------------------
     | The base URL for the Kirimi API.

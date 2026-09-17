@@ -8,12 +8,19 @@
         { "name": "Kirimi", "email": "support@kirimi.id" }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.0",
         "illuminate/support": "^10.0|^11.0|^12.0",
         "illuminate/notifications": "^10.0|^11.0|^12.0",
         "illuminate/console": "^10.0|^11.0|^12.0",
         "kirimi/kirimi-php": "^2.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../kirimi-php",
+            "options": { "symlink": true }
+        }
+    ],
     "require-dev": {
         "orchestra/testbench": "^8.0|^9.0|^10.0",
         "phpunit/phpunit": "^10.0|^11.0"
@@ -37,6 +44,9 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
